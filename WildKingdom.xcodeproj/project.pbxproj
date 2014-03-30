@@ -21,6 +21,7 @@
 		F5BA166918E7EE2200D10F43 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BA164B18E7EE2200D10F43 /* UIKit.framework */; };
 		F5BA167118E7EE2200D10F43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5BA166F18E7EE2200D10F43 /* InfoPlist.strings */; };
 		F5BA167318E7EE2200D10F43 /* WildKingdomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BA167218E7EE2200D10F43 /* WildKingdomTests.m */; };
+		F5BA167E18E7F6B900D10F43 /* FlickrPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BA167D18E7F6B900D10F43 /* FlickrPhotoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		F5BA166E18E7EE2200D10F43 /* WildKingdomTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WildKingdomTests-Info.plist"; sourceTree = "<group>"; };
 		F5BA167018E7EE2200D10F43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F5BA167218E7EE2200D10F43 /* WildKingdomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WildKingdomTests.m; sourceTree = "<group>"; };
+		F5BA167C18E7F6B900D10F43 /* FlickrPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoCell.h; sourceTree = "<group>"; };
+		F5BA167D18E7F6B900D10F43 /* FlickrPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				F5BA165D18E7EE2200D10F43 /* ViewController.m */,
 				F5BA165F18E7EE2200D10F43 /* Images.xcassets */,
 				F5BA164E18E7EE2200D10F43 /* Supporting Files */,
+				F5BA167C18E7F6B900D10F43 /* FlickrPhotoCell.h */,
+				F5BA167D18E7F6B900D10F43 /* FlickrPhotoCell.m */,
 			);
 			path = WildKingdom;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5BA165E18E7EE2200D10F43 /* ViewController.m in Sources */,
+				F5BA167E18E7F6B900D10F43 /* FlickrPhotoCell.m in Sources */,
 				F5BA165818E7EE2200D10F43 /* AppDelegate.m in Sources */,
 				F5BA165418E7EE2200D10F43 /* main.m in Sources */,
 			);
