@@ -10,4 +10,6 @@
 
 @interface ViewController : UIViewController
 
+-(void)seachFlickrFor:(NSString *)searchTerm;
+
 @end

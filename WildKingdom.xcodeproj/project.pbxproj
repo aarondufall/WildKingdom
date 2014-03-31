@@ -22,6 +22,7 @@
 		F5BA167118E7EE2200D10F43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5BA166F18E7EE2200D10F43 /* InfoPlist.strings */; };
 		F5BA167318E7EE2200D10F43 /* WildKingdomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BA167218E7EE2200D10F43 /* WildKingdomTests.m */; };
 		F5BA167E18E7F6B900D10F43 /* FlickrPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BA167D18E7F6B900D10F43 /* FlickrPhotoCell.m */; };
+		F5BA168118E8C73500D10F43 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BA168018E8C73500D10F43 /* TabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		F5BA167218E7EE2200D10F43 /* WildKingdomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WildKingdomTests.m; sourceTree = "<group>"; };
 		F5BA167C18E7F6B900D10F43 /* FlickrPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoCell.h; sourceTree = "<group>"; };
 		F5BA167D18E7F6B900D10F43 /* FlickrPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoCell.m; sourceTree = "<group>"; };
+		F5BA167F18E8C73500D10F43 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		F5BA168018E8C73500D10F43 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 		F5BA163B18E7EE2200D10F43 = {
 			isa = PBXGroup;
 			children = (
+				F5BA167F18E8C73500D10F43 /* TabBarViewController.h */,
+				F5BA168018E8C73500D10F43 /* TabBarViewController.m */,
 				F5BA164D18E7EE2200D10F43 /* WildKingdom */,
 				F5BA166C18E7EE2200D10F43 /* WildKingdomTests */,
 				F5BA164618E7EE2200D10F43 /* Frameworks */,
@@ -254,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BA168118E8C73500D10F43 /* TabBarViewController.m in Sources */,
 				F5BA165E18E7EE2200D10F43 /* ViewController.m in Sources */,
 				F5BA167E18E7F6B900D10F43 /* FlickrPhotoCell.m in Sources */,
 				F5BA165818E7EE2200D10F43 /* AppDelegate.m in Sources */,

@@ -8,9 +8,9 @@
 
 #import "ViewController.h"
 #import "FlickrPhotoCell.h"
+#define kFlickrAPIKey @"6a6e61c371e600f902387ec0e7e59999"
 
-
-@interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
+@interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate, UITabBarDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
 
 @end
@@ -18,13 +18,20 @@
 @implementation ViewController
 {
     NSArray *photos;
+
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSString *searchTerm = @"bear";
-	NSString *apiURL = [NSString stringWithFormat:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=%@&text=%@&per_page=20&format=json&nojsoncallback=1",kFlickrAPIKey,searchTerm];
+
+    [self seachFlickrFor:@"Tiger"];
+}
+
+
+-(void)seachFlickrFor:(NSString *)searchTerm
+{
+	NSString *apiURL = [NSString stringWithFormat:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=%@&text=%@&per_page=30&format=json&nojsoncallback=1",kFlickrAPIKey,searchTerm];
     NSURL *url = [NSURL URLWithString:apiURL];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
@@ -35,11 +42,6 @@
         photos = [[responseJSON objectForKey:@"photos"]objectForKey:@"photo"];
         [self.myCollectionView reloadData];
     }];
-    
-    
-    [self.myCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"flickrCell"];
-
-
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -64,10 +66,10 @@
     return cell;
 }
 
-- (void)didReceiveMemoryWarning
+
+-(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSLog(@"Badge %@",item.badgeValue);
 }
 
 @end
